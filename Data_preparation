@@ -1,0 +1,7 @@
+# 1. ifc data to obj data
+# a. install blender at https://www.blender.org/download/
+# b. install ifcblender at http://ifcopenshell.org/ifcblender.html
+# c. activate ifcblender in blender
+# d. load ifc file in blender and export .obj file
+
+# problem. separate ifc objects and export each objects 

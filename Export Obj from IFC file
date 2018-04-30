@@ -1,0 +1,25 @@
+extract .obj file from blender
+
+https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Export_Selected
+
+1. Export_selected addon 설치
+-> source code download 
+->
+
+2. io_scene_obj modify 
+-> C:\Program Files\Blender Foundation\Blender\2.79\scripts\addons\io_scene_obj ( similar path)
+-> find open( filepath , ' ') part
+
+-> add follow lines
+filepath = re.sub(':','_',filepath)
+filepath = re.sub('_',':',filepath, count = 1)
+filepath = re.sub('"','_',filepath)
+filepath = re.sub('/','_',filepath)
+
+-> save, copy and paste to path
+
+In blender
+select all mesh
+file - export - __ - Export multiple OBJ's
+
+done!
